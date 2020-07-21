@@ -108,3 +108,37 @@ img {
 	font-size: 1.5rem;
 	margin-right: 3%;
 }
+
+/*footer code*/
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #0b0c10;
+}
+
+button {
+	background-color: #45a29e;
+	font-size: 1.5rem;
+	color: #1f2833;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.social-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 40%;
+	margin-bottom: 3%;
+}
+
+.social-container a {
+	font-size: 1.5rem;
+	color: #66fcf1
+}
+
+.social-container a:hover{
+	color: #45a29c;
+}
