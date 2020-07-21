@@ -66,5 +66,27 @@ time, mark, audio, video {
 		border: 1px solid black;
 		width: 30%;
 		text-align: center;
-		
 	}
+
+/* first section code */ 
+.first-sect {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h2 {
+	font-size: 2.5rem;
+	margin-bottom: 3%;
+}
+
+p {
+	width: 60%;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	margin-bottom: 3%;
+}
+
+img {
+	width: 60%;
+}
