@@ -21,8 +21,11 @@ time, mark, audio, video {
 }
 	
 	/*general code*/
-	body {
+	html {
 		font-size: 62.5%;
+	}
+	
+	body {
 		background-color: #282828;
 	}
 
@@ -63,9 +66,14 @@ time, mark, audio, video {
 		background: #c5c6c7;
 		color: #182f33;
 		font-size: 1.8rem;
-		border: 1px solid black;
+		border: .1rem solid black;
 		width: 30%;
 		text-align: center;
+	}
+
+	nav a:hover {
+		background: #a5e9e9;
+		color: #1e2c2f;
 	}
 
 /* first section code */ 
@@ -118,12 +126,23 @@ footer {
 	background-color: #0b0c10;
 }
 
-button {
-	background-color: #45a29e;
-	font-size: 1.5rem;
-	color: #1f2833;
+.contact-button {
+	background-color: #c5c6c7;
+	font-size: 1.8rem;
+	color: #0b0c10;
 	margin-top: 3%;
+	text-align: center;
+	text-decoration: none;
 	margin-bottom: 3%;
+	height: 2.5rem;
+	width: 10%;
+	padding-top: 1%;
+	border: .1rem solid #c7c5c7;
+}
+
+.contact-button:hover {
+	background: #a5e9e9;
+	color: #1e2c2f;
 }
 
 .social-container {
@@ -135,10 +154,61 @@ button {
 }
 
 .social-container a {
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	color: #66fcf1
 }
 
 .social-container a:hover{
 	color: #45a29c;
+}
+
+/*mobile responsive code*/
+@media(max-width: 500px) {
+	nav {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav a {
+		width: 20rem;
+		padding: 3% 0;
+	}
+
+	.second-sect {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.proj-one-two {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin: 3%;
+	}
+
+	.proj-three-four{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-bottom: 4%;
+	}
+
+	.second-sect img {
+		width: 40%;
+		height: 50%;
+	}
+
+	.second-sect p {
+		width: 60%;
+	}
+
+	.contact-button {
+		width: 35%;
+		margin-bottom: 8%;
+	}
+
+	.social-container {
+		margin-bottom: 8%;
+	}
 }
